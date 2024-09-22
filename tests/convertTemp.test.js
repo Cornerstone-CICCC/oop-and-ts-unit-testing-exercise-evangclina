@@ -4,5 +4,14 @@
 // Both test cases need to pass
 
 const Converter = require('../src/convertTemp')
-
 const convert = new Converter()
+
+test("Converting 30˚C will return 86˚F", () => {
+    // const convert = new Converter()
+    expect(convert.convertToCelsius(30))
+})
+
+test("Converting 104 deg fahrenheit will return 40 deg celsius", () => {
+    expect(convert.convertToFahrenheit(40))
+})
+
